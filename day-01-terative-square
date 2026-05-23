@@ -1,0 +1,17 @@
+void setup(){
+size(400,300);
+}
+
+void draw(){
+
+  background(255,200,100);
+  if(mouseX< width/2){
+    fill(255,0,0);
+    rect(mouseX,mouseY,50,50);
+  }
+  else{
+  fill(0,255,0);
+  rect(mouseX,mouseY,50,50);
+  }
+
+}
