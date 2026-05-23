@@ -1,0 +1,30 @@
+color leafColour, trunkColour;
+
+void setup()
+{
+  size(800, 400);
+  noStroke();
+  leafColour  = color(82, 144, 97);
+  trunkColour = color(95, 57, 26);
+}
+
+
+void drawTree(float treeX, float treeY)
+{
+  fill(trunkColour);
+  rect(treeX, treeY, 20, 70);
+  fill(leafColour);
+  ellipse(treeX + 10, treeY - 30, 70, 90);
+}
+
+void draw()
+{
+  background(157, 238, 247);  
+  fill(156, 245, 170);        
+  rect(0, height/2, width, height/2);
+
+  for (float x = 50; x < width; x = x + 100)
+  {
+    drawTree(x, 150);
+  }
+}
