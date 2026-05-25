@@ -1,0 +1,26 @@
+float randomNumber;
+
+void setup(){
+size(400,400);
+background(0);
+randomNumber = random(2.0);
+textSize(48);
+textAlign(CENTER);
+}
+
+void draw(){
+
+  background(220,200,100);
+  String message;
+  
+  if(randomNumber > 1.0){
+  message="HEADS";
+  println(randomNumber);
+  }
+  else{
+  message="TAILS";
+  println(randomNumber);
+  }
+  
+ text (message, width/2, height/2); 
+}
