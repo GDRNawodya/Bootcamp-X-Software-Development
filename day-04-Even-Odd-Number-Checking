@@ -1,0 +1,17 @@
+// non return method
+
+void number(int a){
+  
+  if (a%2 == 0){
+    println("this is Even number");
+  }
+  
+  else{
+  println("this is odd number");
+  }
+}
+
+void setup(){
+  
+  number(2);
+}
