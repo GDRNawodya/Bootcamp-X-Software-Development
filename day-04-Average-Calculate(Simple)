@@ -1,0 +1,10 @@
+// non return method
+void findaverage(int a , int b , int c){
+float averageofnum = (a+b+c)/3;
+println("Average = "+ averageofnum);
+}
+
+void setup(){
+findaverage ( 10,5,15);
+
+}
