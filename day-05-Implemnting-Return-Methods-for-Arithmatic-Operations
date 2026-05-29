@@ -1,0 +1,25 @@
+void setup(){
+
+int resuilt = addmembers(10,5);
+int sumofnumber = addmembers(20,78);
+int averageofnumber = numbers(5,10,15);
+
+println("sum = "+ resuilt);
+println("sum of the numbers = "+ sumofnumber);
+println("Average of the numbers =" + averageofnumber);
+
+}
+
+//average of three numbers
+int numbers(int a , int b, int c){
+ 
+  return (a+b+c)/3;
+}
+
+
+//sum of two numbers
+int addmembers(int a, int b)
+
+{
+return a+b;
+}
